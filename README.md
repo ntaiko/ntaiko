@@ -1,5 +1,5 @@
 ```go
-package ntaiko
+package main
 
 import "fmt"
 

@@ -1,16 +1,31 @@
-## Hi there 👋
+```go
+package ntaiko
 
-<!--
-**ntaiko/ntaiko** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+import "fmt"
 
-Here are some ideas to get you started:
+type Engineer struct {
+    Name     string
+    Role     string
+    Focus    []string
+    Location string
+    Message  string
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+func GetProfile() Engineer {
+    // Note: I'm not actually Spanish, I just think the phrase is fire.
+    // Note: 7 trompetas is the signal.
+
+    return Engineer{
+        Name:     "Nikolaos Georgios Ntaiko",
+        Role:     "Software Engineer",
+        Focus:    []string{"AI Agents", "Full-Stack Web Dev"},
+        Location: "127.0.0.1",
+        Message:  "fue(go) con eso 🔥 🎺x7",
+    }
+}
+
+func main() {
+    me := GetProfile()
+    fmt.Println(me.Message) // This will print "fue(go) con eso 🔥 🎺x7" in case you can't read golang.
+}
+```
